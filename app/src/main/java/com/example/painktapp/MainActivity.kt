@@ -1,6 +1,7 @@
 package com.example.painktapp
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,7 +18,12 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        // 5) viewの取得　→　クリア処理
+        val myView:MyView = findViewById(R.id.myView)
+        val btnClear:Button = findViewById(R.id.btnClear)
 
-
+        btnClear.setOnClickListener {
+            myView.clearCanvas()
+        }
     }
 }

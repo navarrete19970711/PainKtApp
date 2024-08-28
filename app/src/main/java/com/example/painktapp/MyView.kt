@@ -23,7 +23,7 @@ class MyView(context: Context?, attrs: AttributeSet?) : View(context, attrs) {
         super.onDraw(canvas)
         paint.color = Color.BLUE//色
         paint.style = Paint.Style.STROKE//描画のスタイルを線にする
-        paint.strokeWidth = 10F//幅
+        paint.strokeWidth = 5F//幅
         canvas.drawPath(path,paint)
     }
 
