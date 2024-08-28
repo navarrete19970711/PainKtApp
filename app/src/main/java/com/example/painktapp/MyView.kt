@@ -8,5 +8,6 @@ import android.view.View
 // 1) viweを継承したクラス
 class MyView(context: Context?, attrs: AttributeSet?) : View(context, attrs) {
 
-   
+    
+
 }
